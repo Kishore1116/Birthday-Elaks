@@ -4,9 +4,17 @@
   <meta charset="UTF-8">
   <title>Hapyy Birthday Elaks ❤️🍰</title>
   <link rel="stylesheet" href="./style.css">
-  <audio autoplay loop preload="auto" style="display:none">
-	<source src="(https://kishore1116.github.io/Birthday-Elaks/src/audio/lux.mp3" type="audio/mpeg">
+  <audio id="bg-music" preload="auto">
+	<source src="audio/lux.mp3" type="audio/mpeg">
   </audio>
+  <button onclick="playMusic()">Play Music</button>
+
+  <script>
+	function playMusic() {
+		const audio = document.getElementById("bg-music");
+		audio.play();
+	}
+</script>
 
 </head>
 <body>
